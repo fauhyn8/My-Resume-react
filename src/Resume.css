@@ -1,0 +1,293 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid #c0c2bf;
+  object-fit: cover;
+}
+
+.name-and-contact-section {
+  flex-basis: 70%;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.name {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #333;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px; 
+}
+
+.contact-list li span {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.icon {
+  width: 20px; 
+  height: 20px; 
+  vertical-align: middle; 
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+}
+
+.left-column {
+  background-color: #e7e8e6;
+  flex-basis: 30%;
+  border-right: 2px solid #ddd;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.right-column {
+  flex-basis: 70%;
+  padding-left: 20px;
+}
+
+/* Left Column Title */
+.left-column h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+}
+
+.left-column p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.education ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.education ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.education ul li span {
+  font-weight: normal;
+  display: block;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border: none; 
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.skill-category ul li {
+  margin-bottom: 5px;
+}
+
+.right-column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.projects {
+  margin-top: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: solid #a6a6a6;
+}
+
+.project h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.project ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.project ul li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-section {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name-and-contact-section {
+    flex-basis: 100%;
+    text-align: left;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
+  }
+
+  .contact-list {
+    gap: 5px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    flex-basis: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .left-column h2, .right-column h2 {
+    font-size: 18px;
+  }
+
+  .projects .project {
+    margin-bottom: 15px;
+  }
+
+  .project h3 {
+    font-size: 18px;
+  }
+
+  .project h4 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .profile-section {
+    flex-basis: 30%;
+  }
+
+  .name-and-contact-section {
+    flex-basis: 70%;
+    text-align: center;
+  }
+
+  .main-content {
+    display: flex;
+  }
+
+  .left-column {
+    flex-basis: 30%;
+  }
+
+  .right-column {
+    flex-basis: 70%;
+  }
+}
